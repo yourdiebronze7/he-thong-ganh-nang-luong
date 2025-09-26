@@ -11,9 +11,12 @@ contract EnergyExchange {
     mapping(uint256 => Transaction) public transactions;
     uint256 public transactionCount;
 
+    event TransactionMade(address indexed buyer, address indexed seller, uint256 amount, uint256 price);
+
     function makeTransaction(address _seller, uint256 _amount, uint256 _price) public {
         transactionCount++;
         transactions[transactionCount] = Transaction(msg.sender, _seller, _amount, _price);
+        emit TransactionMade(msg.sender, _seller, _amount, _price);
     }
 
     function getTransaction(uint256 _transactionId) public view returns (Transaction memory) {
