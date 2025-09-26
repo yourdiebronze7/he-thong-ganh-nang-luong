@@ -1,7 +1,7 @@
 {
   "name": "he-thong-ganh-nang-luong",
   "version": "1.0.0",
-  "description": "Energy Harvesting System",
+  "description": "Energy Harvesting System for Renewable Energy Solutions",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
