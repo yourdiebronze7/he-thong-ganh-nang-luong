@@ -1,0 +1,26 @@
+{
+  "name": "he-thong-ganh-nang-luong",
+  "version": "1.0.0",
+  "description": "Hệ thống Gánh Năng Lượng",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^4.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
