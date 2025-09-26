@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.send('Energy Load Balancing API');
+    res.send('Welcome to the Energy Load Balancing API');
 });
 
 app.listen(PORT, () => {
