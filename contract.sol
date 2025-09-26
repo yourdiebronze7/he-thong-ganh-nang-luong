@@ -15,7 +15,7 @@ contract EnergyExchange {
 
     function makeTransaction(address _seller, uint256 _amount, uint256 _price) public {
         require(_seller != address(0), "Seller address cannot be zero.");
-        require(_amount > 0, "Amount must be greater than zero.");
+        require(_amount > 0, "Transaction amount must be a positive value.");
         require(_price > 0, "Price must be greater than zero.");
         transactionCount++;
         transactions[transactionCount] = Transaction(msg.sender, _seller, _amount, _price);
